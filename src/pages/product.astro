@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TopBar from '../components/TopBar';
+import StoreHeader from '../components/StoreHeader';
+import StoreNavigation from '../components/StoreNavigation';
+import ProductPage from '../components/ProductPage';
+import StoreFooter from '../components/StoreFooter';
+---
+
+<Layout title="Artisan Sourdough Bread - Fresh Market">
+  <div class="min-h-screen flex flex-col bg-white">
+    <TopBar client:load />
+    <StoreHeader client:load />
+    <StoreNavigation client:load />
+    <ProductPage client:load />
+    <StoreFooter client:load />
+  </div>
+</Layout>
